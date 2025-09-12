@@ -16,11 +16,17 @@
       color: #333;
     }
 
+form input[type="submit"]:hover {
+  background-color: #38b2ac;
+  transform: scale(1.05);
+}
+
+
     /* Sticky Header */
     header {
       background-color: #091731;
       color: #ffffff;
-      padding: 20px;
+      padding: 10px 20px;
       text-align: center;
       position: sticky;
       top: 0;
@@ -36,7 +42,7 @@
       font-size: 2.5em;
     }
     header p {
-      margin-top: 5px;
+      margin-top: 2px;
       font-size: 1.1em;
       color: #a0c4d6;
     }
@@ -54,11 +60,12 @@
     /* Features sectie */
     #features {
       background-color: #e6f5ea;
-      padding: 50px 20px;
+      padding: 20px 20px;
       text-align: center;
     }
     #features h2 {
       color: #0b3d1a;
+      margin-top: 0;
       margin-bottom: 40px;
       font-size: 2em;
     }
@@ -161,6 +168,10 @@
       font-size: 0.9em;
     }
 
+	form input[type="submit"]:hover {
+  background-color: #38b2ac;
+  transform: scale(1.05);
+
     /* Responsive */
     @media(max-width: 600px){
       .artists {
@@ -191,28 +202,26 @@
     <div class="feature-item"><span>&#10004;</span> Alleen talentvolle artiesten</div>
     <div class="feature-item"><span>&#10004;</span> 100% gage voor de band</div>
     <div class="feature-item"><span>&#10004;</span> Persoonlijk advies</div>
-  </div>
+ </div>
 </section>
 
 <section id="artists">
   <h2>Onze Artiesten</h2>
   <div class="artists">
 
-<!-- Peter Selie -->
+<!-- Pace Low -->
     <div class="artist-card">
-      <a href="https://www.zangerpeterselie.nl" target="_blank">
-        <img src="PeterSelie.jpg" alt="Peter Selie">
+      <a href="https://www.instagram.com/Pacelow_band/" target="_blank">
+        <img src="PaceLow.jpg" alt="Caramba!">
       </a>
-      <h3>Peter Selie</h3>
-      <p>Carnaval op zijn bast met Peter en zijn team.</p>
-      <p><a href="mailto:" class="contact-link">Neem contact op</a></p>
+      <h3>Pace Low</h3>
+      <p>Deze 4 neven mixen ska, country, blues, rock, soul met humor. </p>
+      <p><a href="mailto:direct2stage@gmail.com" class="contact-link">Neem contact op</a></p>
       <div class="social-links">
-        <a href="https://www.zangerpeterselie.nl" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://www.instagram.com/zanger_peter_selie/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/ZangerPeterSelie/?locale=nl_NL" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/Pacelow_band/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/artist/2BaaOSc7NwAyOeDwvadvoY" target="_blank"><i class="fab fa-spotify"></i></a>
       </div>
     </div>
-
 
     <!-- Skankin' Rebels -->
     <div class="artist-card">
@@ -235,27 +244,12 @@
         <img src="macm.jpg" alt="MAC'M">
       </a>
       <h3>MAC'M</h3>
-      <p>Kids rock band die spelen alsof ze decennia ervaring hebben.</p>
-      <p><a href="mailto:contact@macm.nl" class="contact-link">Neem contact op</a></p>
+      <p>Een kids rockband die speelt met het zelfvertrouwen van ervaren muzikanten.</p>
+      <p><a href="mailto:remcogeers@gmail.com" class="contact-link">Neem contact op</a></p>
       <div class="social-links">
         <a href="https://www.macm.nu" target="_blank"><i class="fas fa-globe"></i></a>
         <a href="https://www.instagram.com/macm_band" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/@macmband" target="_blank"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-
-    <!-- Heartshake -->
-    <div class="artist-card">
-      <a href="https://www.heartshake.nl" target="_blank">
-        <img src="heartshake.jpg" alt="Heartshake">
-      </a>
-      <h3>Heartshake</h3>
-      <p>Stevige dosis punk, recht uit het hart.</p>
-      <p><a href="mailto:contact@heartshake.nl" class="contact-link">Neem contact op</a></p>
-      <div class="social-links">
-        <a href="https://www.heartshake.nl" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://www.instagram.com/heartshakeband" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@heartshake" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
 
@@ -265,7 +259,7 @@
         <img src="Caramba.jpg" alt="Caramba!">
       </a>
       <h3>CARAMBA!</h3>
-      <p>Een swingende sambaband dat van ieder evenement een feestje maakt</p>
+      <p>Een swingende sambaband die ieder evenement omtovert tot feest.</p>
       <p><a href="mailto:info@carambasamba.nl" class="contact-link">Neem contact op</a></p>
       <div class="social-links">
         <a href="https://www.carambasamba.nl/" target="_blank"><i class="fas fa-globe"></i></a>
@@ -274,28 +268,103 @@
       </div>
     </div>
 
-
     <!-- Suranga & Benzstur -->
     <div class="artist-card">
       <a href="https://www.djsuranga.com" target="_blank">
         <img src="SurBen.jpg" alt="Suranga & Benzstur">
       </a>
       <h3>Suranga & Benzstur</h3>
-      <p>EDM DJ-set, stilstaan is verboden.</p>
+      <p>Een dynamisch EDM-duo dat niemand stil laat staan..</p>
       <p><a href="mailto:djsurangamusic@gmail.com" class="contact-link">Neem contact op</a></p>
       <div class="social-links">
         <a href="https://djsuranga.com/" target="_blank"><i class="fas fa-globe"></i></a>
         <a href="https://www.instagram.com/suranga.benzstur/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://soundcloud.com/djsuranga" target="_blank"><i class="fab fa-soundcloud"></i></a>
+	<a href="https://open.spotify.com/playlist/2K8pBpXF8m7156DcJCxJzo?si=fbf75ae2d26b498a" target="_blank"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+
+    <!-- Benjaminsz Family Band -->
+    <div class="artist-card">
+      <a href="https://www.zeeuwsweerzien.nl/er-zit-muziek-in-de-benjaminszen/" target="_blank">
+        <img src="Benjaminsz.jpg" alt="The Benjaminsz Family Band">
+      </a>
+      <h3>The Benjaminsz Family Band</h3>
+      <p>Al 75 jaar een begrip, 4 generaties muzikanten.</p>
+      <p><a href="mailto:direct2stage@gmail.com" class="contact-link">Neem contact op</a></p>
+      <div class="social-links">
+        <a href="https://www.zeeuwsweerzien.nl/er-zit-muziek-in-de-benjaminszen/" target="_blank"><i class="fas fa-globe"></i></a>
+	<a href="https://www.youtube.com/watch?v=j-NajmTQx7w&list=PLc_6v2Dxlz-jhVBlKkV4MC7uGwn6r1KXv" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
 
   </div>
+
+ <section id="booking" style="background-color:#e6f5ea; padding:30px 20px; border-radius:15px; margin:40px 20px; text-align:center;">
+  <h2>Boek een Artiest</h2>
+  <p>Vul onderstaand formulier in om een artiest te boeken.</p>
+
+  <form action="mailto:direct2stage@gmail.com?subject=Bookingaanvraag%20Direct2Stage" method="post" enctype="text/plain" style="display:flex; flex-wrap:wrap; gap:20px; max-width:800px; margin:0 auto;">
+    
+    <!-- Linkerkolom -->
+    <div style="flex:1; min-width:250px;">
+      <label>Naam:<br>
+        <input type="text" name="Naam" required style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+      </label>
+      
+      <label>Email / Contact:<br>
+        <input type="email" name="Email" required style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+      </label>
+
+      <label>Datum evenement:<br>
+        <input type="date" name="Datum" required style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+      </label>
+
+      <label>Kies artiest:<br>
+        <select name="Artiest" required style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+          <option value="">-- Selecteer een artiest --</option>
+          <option value="Pace Low">Pace Low</option>
+          <option value="Skankin' Rebels">Skankin' Rebels</option>
+          <option value="MAC'M">MAC'M</option>
+          <option value="CARAMBA!">CARAMBA!</option>
+          <option value="Suranga & Benzstur">Suranga & Benzstur</option>
+          <option value="The Benjaminsz Family Band">The Benjaminsz Family Band</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Rechterkolom -->
+    <div style="flex:1; min-width:250px;">
+      <label>Locatie evenement:<br>
+        <input type="text" name="Locatie" style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+      </label>
+
+      <label>Naam evenement:<br>
+        <input type="text" name="Locatie" style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;">
+      </label>
+
+      <label>Extra opmerkingen:<br>
+        <textarea name="Opmerkingen" rows="5" style="width:100%; padding:8px; margin:5px 0; border-radius:5px; border:1px solid #ccc;"></textarea>
+      </label>
+    </div>
+
+    <!-- Verstuur knop (onder beide kolommen) -->
+    <div style="width:100%; text-align:center; margin-top:20px;">
+      <input type="submit" value="Verstuur aanvraag" style="background-color:#4fd1c5; color:white; padding:12px 24px; border:none; border-radius:30px; font-weight:bold; cursor:pointer; transition:background-color 0.3s, transform 0.2s;">
+    </div>
+  </form>
 </section>
+
 
 <footer>
   <p>&copy; 2025 Direct2Stage. Alle rechten voorbehouden.</p>
+  <a href="mailto:direct2stage@gmail.com" style="color: #ADD8E6; text-decoration: none;">
+  🎵 Join Direct2Stage?
+</a> direct2stage@gmail.com
 </footer>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 
 </body>
 </html>
