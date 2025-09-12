@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct2Stage - Boek artiesten direct</title>
+  <style>
+    /* Basisinstellingen */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Sticky Header */
+    header {
+      background-color: #0b1d3a;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 1.1em;
+      color: #a0c4d6;
+    }
+    nav a {
+      color: #4fd1c5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* Features sectie */
+    #features {
+      background-color: #e6f5ea;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    #features h2 {
+      color: #0b3d1a;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .feature-item {
+      max-width: 250px;
+      text-align: left;
+      font-size: 1.1em;
+    }
+    .feature-item span {
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* Secties */
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0b1d3a;
+      font-size: 2em;
+    }
+
+    /* Artiestenkaarten */
+    .artists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .artist-card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .artist-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .artist-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .artist-card img:hover {
+      transform: scale(1.05);
+    }
+    .artist-card h3 {
+      margin: 10px 0 5px 0;
+      color: #0b1d3a;
+    }
+    .artist-card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .artist-card a.contact-link {
+      color: #4fd1c5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .artist-card a.contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0b1d3a;
+      color: #ffffff;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px){
+      .artists {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Direct2Stage.jpg" alt="Direct2Stage Logo">
+  <p>Boek artiesten direct, 100% van de gage gaat naar de artiest</p>
+  <nav>
+    <a href="#features">Waarom Direct2Stage</a>
+    <a href="#artists">Artiesten</a>
+  </nav>
+</header>
+
+<section id="features">
+  <h2>Waarom Direct2Stage?</h2>
+  <div class="feature-list">
+    <div class="feature-item">
+      <span>&#10004;</span> Contact met de bands
+    </div>
+    <div class="feature-item">
+      <span>&#10004;</span> Alleen talentvolle artiesten
+    </div>
+    <div class="feature-item">
+      <span>&#10004;</span> 100% gage voor de band
+    </div>
+    <div class="feature-item">
+      <span>&#10004;</span> Persoonlijk advies
+    </div>
+  </div>
+</section>
+
+<section id="artists">
+  <h2>Onze Artiesten</h2>
+  <div class="artists">
+
+    <!-- Skankin' Rebels -->
+    <div class="artist-card">
+      <a href="https://www.skankingrebels.nl" target="_blank">
+        <img src="skankinrebels.jpg" alt="Skanking Rebels">
+      </a>
+      <h3>Skankin' Rebels</h3>
+      <p>Energieke ska en reggae vibes die elk podium in beweging krijgen.</p>
+      <p><a href="mailto:contact@skankinrebels.nl" class="contact-link">Neem contact op</a></p>
+      <p>
+        <a href="https://www.skankingrebels.nl" target="_blank">Website</a> | 
+        <a href="https://www.instagram.com/skankinrebels" target="_blank">Instagram</a> | 
+        <a href="https://www.youtube.com/@skankinrebels" target="_blank">YouTube</a>
+      </p>
+    </div>
+
+    <!-- MAC'M -->
+    <div class="artist-card">
+      <a href="https://www.macm.nu" target="_blank">
+        <img src="macm.jpg" alt="MAC'M">
+      </a>
+      <h3>MAC'M</h3>
+      <p>Kids rock band die spelen alsof ze decenia ervaring hebben.</p>
+      <p><a href="mailto:contact@macm.nl" class="contact-link">Neem contact op</a></p>
+      <p>
+        <a href="https://www.macm.nu" target="_blank">Website</a> | 
+        <a href="https://www.instagram.com/macm_band" target="_blank">Instagram</a> | 
+        <a href="https://www.youtube.com/@macmband" target="_blank">YouTube</a>
+      </p>
+    </div>
+
+    <!-- Heartshake -->
+    <div class="artist-card">
+      <a href="https://www.heartshake.nl" target="_blank">
+        <img src="heartshake.jpg" alt="Heartshake">
+      </a>
+      <h3>Heartshake</h3>
+      <p>Stevige dosis punk, recht uit het hart.</p>
+      <p><a href="mailto:contact@heartshake.nl" class="contact-link">Neem contact op</a></p>
+      <p>
+        <a href="https://www.heartshake.nl" target="_blank">Website</a> | 
+        <a href="https://www.instagram.com/heartshakeband" target="_blank">Instagram</a> | 
+        <a href="https://www.youtube.com/@heartshake" target="_blank">YouTube</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Direct2Stage. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>
